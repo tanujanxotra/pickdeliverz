@@ -1,0 +1,325 @@
+body{
+  font-family: "Josefin Sans", sans-serif;
+}
+.headerstrip a{
+ text-decoration: none;
+ color: white;
+}
+.headersocial li{
+    list-style: none;
+    display: inline;
+    color: white;
+    padding-left: 10px;
+}
+.headersocial{
+    float: right;
+}
+.headersocial ul{
+    margin: 0;;
+}
+footer h3{
+    margin-bottom: 35px;
+}
+footer{
+    color: white;
+}
+.footer-list{
+    font-size: 17px;
+    list-style: none;
+}
+.footer-list a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.footer-list li{
+    margin-bottom: 10px;
+}
+.contact{
+    margin-bottom: 10px;
+}
+.contact-icon{
+    margin-right: 10px;     
+    display: flex;
+    align-items: center;
+}
+.contact-detail{
+    font-size: 17px;
+}
+.social a{
+  color: #ffffff;
+}
+.social li{
+    list-style: none;
+    display: inline;
+    color: white;
+    padding-left: 10px;
+}
+.whylogo{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    min-height: 186px;
+    border-bottom: 4px solid #2ca64b;
+}
+.ourservices{
+    background: #87CEEB;
+}
+.ourservice{
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+.ourservice-content{
+    padding: 20px;
+}
+.navbaritems li a{
+    font-size: 17px;
+}
+.headernavitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.headernavitem ul{
+  margin: 0px;
+  padding: 30px 0px;
+}
+.headernavitem ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+.headernavitem ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.enquirybtn{
+  background: #22273b;
+  color: white !important;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.enquirybtn:hover{
+    background: #7dd957;
+}
+.our-partners {
+    text-align: center;
+    padding: 40px 0;
+    background: #dfe0e1;
+  }
+  
+  .carouselheading{
+    margin-bottom: 50px;
+  }
+  h1{
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .whylogo p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .whylogo:hover{
+    border: 4px solid #2ca64b;
+  }
+  /* Overall Section Padding */
+#ourservicesec {
+    background: #dfe0e1;
+  }
+  
+  /* Service Card Container */
+  .ourservice {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Hover Effect */
+  .ourservice:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Styling */
+  .ourservice-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Content Area */
+  .ourservice-content {
+    padding: 20px 15px;
+    flex: 1;
+  }
+  
+  /* Title */
+  .ourservice-content h4 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph */
+  .ourservice-content p {
+    font-size: 17px;
+    color: #666;
+    min-height: 90px;
+  }
+  
+  /* Buttons */
+  .ourservice-btn {
+    margin-top: 15px;
+  }
+  
+  .ourservice-btn .btn {
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button Hover Effects */
+  .ourservice-btn .btn-primary:hover {
+    background-color: #004a99;
+    transform: scale(1.05);
+  }
+  
+  .ourservice-btn .btn-success:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .ourservice-content h4 {
+      font-size: 1.1rem;
+    }
+  
+    .ourservice-content p {
+      font-size: 0.9rem;
+    }
+  
+    .ourservice-img img {
+      height: 180px;
+    }
+  }
+  #contactform {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  #contactform input,
+  #contactform select,
+  #contactform textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+  }
+  
+  #contactform input:focus,
+  #contactform select:focus,
+  #contactform textarea:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+.headerstrip{
+  padding: 5px 0px;
+}
+.getbtn{
+  width: 100%;
+}
+.form-control{
+  line-height: 2;
+}
+.whychooseus{
+  background-color: #f8f8f8;
+  padding: 50px 0px;
+}
+.our-partner-item{
+  padding: 30px 10px;
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 140px;
+}
+.our-partners{
+  padding: 50px 0px;
+}
+.changecolor{
+  color: #2ca64b;
+}
+.aboutus p{
+  text-align: justify;
+}
+.getintouchleft{
+  color: #ffffff;
+}
+p{
+  font-size: 17px;
+}
+.getintouch{
+  background-image: url('imagecontact.jpg');
+  background-size: cover;
+}
+.footer-logo{
+  margin-bottom: 20px;
+}
+footer{
+  background-image: url('luxa.org-opacity-changed-._aerial-view-container-cargo-ship-sea\ \(1\).jpg');
+  background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+  [data-aos] {
+      animation: none !important;  /* Disables the AOS animation on mobile */
+      transition: none !important;  /* Disables the transition */
+  }
+}
+@media screen and (max-width:768px){
+  .headernavitem{
+    display: none;
+  }
+  .getintouchleft{
+    margin-bottom: 30px;
+  }
+  .footer-list{
+    padding: 0px;
+  }
+  .footer-margin{
+    margin-bottom: 30px;
+  }
+  footer h3 {
+    margin-bottom: 15px;
+}
+.headerstrip{
+  text-align: center;
+}
+.headersocial{
+  float: none !important;
+}
+.headersocial ul {
+  margin: 0;
+  padding: 0;
+}
+}
