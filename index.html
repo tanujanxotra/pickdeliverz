@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PICKDELIVERZ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="headerstrip" style="background: #22273b;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#"><i class="fa-solid fa-envelope"></i> Email: info.pickdeliverz@gmail.com</a>
+            </div>
+            <div class="col-md-4 text-center">
+              <a href="#"><i class="fa-solid fa-phone"></i> Phone: 8920714792, 011-45025802
+              </a>
+            </div>
+            <div class="col-md-4">
+              <div class="headersocial">
+                <ul>
+                  <li><a href="https://www.facebook.com/people/Pickdeliverz/61575172936146/?mibextid=wwXIfr&rdid=3rklTkZ0CuKwBMZg&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16Mz2jR7Ct%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/pick_deliverz/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><i class="fa-brands fa-x-twitter"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="headernav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="headerlogo">
+            <img src="logo.png" alt="logo" width="50%">
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <div class="headernavitem">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#aboutsec">About Us</a></li>
+              <li><a href="#ourservicesec">Our Services</a></li>
+              <li><a href="#whychooseussec">Why Choose Us</a></li>
+              <li><a href="#" class="enquirybtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enquiry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container" id="contactform">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <h2 class="text-center mb-4">Contact Us</h2>
+              <form>
+                <div class="row g-3">
+                  <!-- First Name -->
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                  </div>
+        
+                  <!-- Last Name -->
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+                  </div>
+        
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                  </div>
+        
+                  <!-- Phone -->
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+1 234 567 890" required>
+                  </div>
+        
+                  <!-- Services Dropdown -->
+                  <div class="col-12">
+                    <label for="service" class="form-label">Select a Service</label>
+                    <select class="form-select" id="service" required>
+                      <option value="" selected disabled>Choose a service</option>
+                      <option value="Air Freight Forwarder">Air Freight Forwarder</option>
+                      <option value="Import Services">Import Services</option>
+                      <option value="Freight Forwarder">Freight Forwarder</option>
+                      <option value="International Courier">International Courier</option>
+                      <option value="Equipment Transport">Equipment Transport</option>
+                      <option value="Sea Freight Forwarder">Sea Freight Forwarder</option>
+                    </select>
+                  </div>
+        
+                  <!-- Message -->
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                  </div>
+        
+                  <!-- Submit Button -->
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-4 py-2 mt-3">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="BANNER-CURIER-AND-CARGO2.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="BANNER-CURIER-AND-CARGO-3.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item" data-bs-interval="7000">
+      <img src="IMG-20250425-WA0007.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+  <div class="container">
+    <div class="aboutus pt-5 pb-5" id="aboutsec">
+      <div class="row">
+        <div class="col-md-6 order-2">
+          <img src="aboutus.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 order-1">
+          <h1 class="">About Us - <span class="changecolor">PICKDELIVERZ</span></h1>
+          <p>
+            At PICKDELIVERZ, we are committed to providing reliable, efficient, and cost-effective courier and cargo services for both domestic and international shipments. With years of experience in the logistics and transportation industry, our mission is to streamline your shipping experience, whether it's a small parcel or large freight.
+          </p>
+<p>
+  We offer a comprehensive range of services tailored to meet the needs of individuals and businesses alike, ensuring safe and timely deliveries worldwide. From courier services for everyday needs to cargo transportation for larger shipments, we handle it all with precision and care.
+</p>
+<p>
+  Our domestic services ensure that no matter where you are in the country, your goods will be transported swiftly and securely. For our international customers, we provide seamless cross-border shipping solutions, backed by our global network of trusted partners, ensuring your items arrive at their destination on time, every time.
+</p>
+<p>
+  In addition to our courier and cargo services, we specialize in moving and packing solutions. Whether you're relocating to a new home or need assistance with packing delicate items, our team of trained professionals ensures that your belongings are handled with the utmost care and packed securely for a safe journey.
+</p>
+<p>Our dedicated customer support team is always available to assist you throughout the process, ensuring that your experience is smooth and hassle-free. With a strong commitment to innovation and customer satisfaction, we continue to evolve our services to meet the growing demands of the global marketplace. Trust us to deliver your goods safely, efficiently, and with a smile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ourservices pt-5 pb-5" id="ourservicesec"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Our Services</h1>
+          <p class="text-center pb-3">We provide efficient solutions for office corporate shifting, house relocation, bike moving, equipment transport, and cargo services with secure handling, timely delivery, and minimal disruption.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+          <div class="owl-carousel owl-theme">
+  
+            <!-- Service Card -->
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="cargo-services.jpg" alt="Air Freight Forwarder" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">Cargo Services</h4>
+                <p>We provide fast, reliable, and secure cargo services with global shipping, real-time tracking, customs clearance, and efficient logistics solutions.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Repeat for other services -->
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="DOMESTIC-COURIER.jpg" alt="Import Services" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">Domestic Courier</h4>
+                <p>Reliable domestic courier services offering same-day pickup, secure packaging, real-time tracking, and swift delivery across cities, towns, and rural areas.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="house-shifting.jpg" alt="House Shifting" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">House Shifting</h4>
+                <p>Safe and reliable house shifting services with expert packing, secure transport, timely delivery, and complete end-to-end relocation support nationwide.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="international-courier.jpg" alt="International Courier" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">International Courier</h4>
+                <p>Reliable international courier services ensuring fast, secure delivery across borders, with real-time tracking, customs handling, and global reach.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="Office-Corporate shifting.jpg" alt="Office Corporate Shifting" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">Corporate Shifting</h4>
+                <p>Professional office shifting services with organized packing, secure transport, minimal downtime, and efficient relocation of corporate assets and equipment.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="bike-moving.jpg" alt="Bike Moving" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">Bike Moving</h4>
+                <p>Reliable bike moving services ensuring safe packing, secure transport, and timely delivery of your motorcycle to any destination nationwide.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+            <div class="ourservice item">
+              <div class="ourservice-img">
+                <img src="equipment-transport.jpg" alt="Equipment Transport" class="img-fluid">
+              </div>
+              <div class="ourservice-content">
+                <h4 class="text-center">Equipment Transport</h4>
+                <p>Specialized equipment transport services with safe loading, secure transport, and timely delivery of heavy machinery and industrial equipment nationwide.</p>
+                <div class="ourservice-btn text-center">
+                  <a href="mailto:info.pickdeliverz@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enquiry</a>
+                  <a href="https://wa.me/918920714792" target="_blank" rel="noopener noreferrer" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="getintouch pt-5 pb-5" style="background-color:#43454c">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="getintouchleft">
+            <h1 class="mb-5">Get in Touch</h1>
+            <div class="">
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>  
+                </div>
+                <div class="contact-detail">  
+                  K-94, Main Masoodpur Road, Vasant Kunj, New delhi - 110070 <br>
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>  
+                </div>
+                <div class="contact-detail">
+                  1158 Akshardham  Sector 19, Pocket 3, Dwarka New delhi - 110075
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-detail">
+                  info.pickdeliverz@gmail.com
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-detail">
+                  8920714792
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-detail">
+                  011-45025802
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="row">
+              <div class="col-md-12 mb-2">    
+                <input type="text" placeholder="Full Name" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <input type="email" placeholder="Email" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <input type="text" placeholder="Phone" class="form-control">
+              </div>
+              <div class="col-md-12 mb-2">
+                <textarea name="" id="" placeholder="Message" class="form-control" rows="3"></textarea>
+              </div>
+              <div class="col-md-12 mb-2">
+                <button class="btn btn-primary getbtn">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="whychooseus" id="whychooseussec">
+     <div class="container">
+    <div class="row">
+      <div class="col-md-12" data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
+        <div class="whychooseus-heading mb-3">
+          <h1 class="text-center">Why Choose <span class="changecolor">Us?</span></h1>
+          <p class="text-center">With reliable service, competitive pricing, and a commitment to customer satisfaction, we make shipping and moving stress-free, every step of the way.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-3 pb-5">
+      <div class="col-md-2 col-6 mb-2" data-aos="fade-down">
+        <div class="whylogo">
+          <img src="fast-delivery.png" alt="" width="50%">
+          <p>Fast & Reliable Delivery</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-6 mb-2" data-aos="fade-up">
+        <div class="whylogo">
+          <img src="delivery-insurance.png" alt="" width="50%">
+          <p>Secure Handling</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-6 mb-2" data-aos="fade-down">
+        <div class="whylogo">
+          <img src="all-embracing.png" alt="" width="50%">
+          <p>Nationwide & International Coverage</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-6 mb-2" data-aos="fade-up">
+        <div class="whylogo">
+          <img src="money-bag.png" alt="" width="50%">
+          <p>Competitive Rates</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-6 mb-2" data-aos="fade-down">
+        <div class="whylogo">
+          <img src="24-hours-support.png" alt="" width="50%">
+          <p> 24/7 Customer Support</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-6 mb-2" data-aos="fade-up">
+        <div class="whylogo">
+          <img src="real-time-monitoring.png" alt="" width="50%">
+          <p> Real-Time Tracking</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="our-partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Our Partners</h1>
+        <p class="mb-5">We collaborate with a network of trusted global carriers and logistics providers to ensure seamless and efficient delivery of your goods, wherever they need to go.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="aramex.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="Blue-Dart.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="DELHIVERY.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="DTDC.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="Ecom-Express.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="Fedex.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="Xpress-Bees.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="our-partner-item">
+          <img src="DHL_Logo.svg.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer style="background-color: #22273b;">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer-margin">
+            <div class="footer-logo">
+              <img src="logo.png" alt="" width="70%">
+            </div>
+              <p>
+                At PICKDELIVERZ, we specialize in seamless courier, cargo, and moving solutions, offering reliable domestic and international services with a focus on efficiency, security, and customer satisfaction.
+              </p>
+              <div class="social">
+                <ul>
+                  <li><a href="https://www.facebook.com/people/Pickdeliverz/61575172936146/?mibextid=wwXIfr&rdid=3rklTkZ0CuKwBMZg&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16Mz2jR7Ct%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/pick_deliverz/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><i class="fa-brands fa-x-twitter"></i></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-margin">
+            <ul class="footer-list">
+              <h3>Quick Links</h3>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Why choose us</a></li>
+              <li><a href="#">Our Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+             <div class="footer-margin">
+              <h3>Contact Details</h3>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>  
+                </div>
+                <div class="contact-detail">  
+                  K-94, Main Masoodpur Road, Vasant Kunj, New delhi - 110070 <br>
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>  
+                </div>
+                <div class="contact-detail">
+                  1158 Akshardham  Sector 19, Pocket 3, Dwarka New delhi - 110075
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-detail">
+                  info.pickdeliverz@gmail.com
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-detail">
+                  8920714792 
+                </div>
+              </div>
+              <div class="contact d-flex">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-detail">
+                  011-45025802
+                </div>
+              </div>
+             </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-margin">
+            <h3>Contact Us</h3>
+            <form action="">
+              <input type="text" placeholder="Full Name" class="form-control mb-2">
+              <input type="email" placeholder="Email" class="form-control mb-2">
+              <input type="phone" placeholder="Phone" class="form-control mb-2">
+              <button class="btn-light form-control">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    });
+  });
+</script>
+<script>$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  responsive: {
+    0: { items: 1 },
+    576: { items: 1 },
+    768: { items: 2 },
+    992: { items: 3 },
+    1200: { items: 4 }
+  }
+});
+</script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = document.querySelector('#carouselExample');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 3000, // Default interval
+      ride: 'carousel'
+    });
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
